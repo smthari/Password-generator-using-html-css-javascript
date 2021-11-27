@@ -1,4 +1,4 @@
-// Functions for generating random number lowercase uppercase tets , symbols
+// Functions for generating random number lowercase uppercase letters , symbols
 
 /* Math.random method genrate a random floating-point numbers
 Math.floor() function returns the largest integer less than or equal to a given number.
@@ -21,3 +21,12 @@ function getRandomSymbol() {
   const symbols = "!@#$%^&*(){}[]=<>/,.";
   return symbols[Math.floor(Math.random() * symbols.length)];
 }
+
+// adding a all functions into a object called randomFunc
+const randomFunc = {
+    lower: getRandomLower,
+    upper: getRandomUpper,
+    number: getRandomNumber,
+    symbol: getRandomSymbol
+  };
+  
