@@ -24,9 +24,27 @@ function getRandomSymbol() {
 
 // adding a all functions into a object called randomFunc
 const randomFunc = {
-    lower: getRandomLower,
-    upper: getRandomUpper,
-    number: getRandomNumber,
-    symbol: getRandomSymbol
-  };
-  
+  lower: getRandomLower,
+  upper: getRandomUpper,
+  number: getRandomNumber,
+  symbol: getRandomSymbol,
+};
+
+// adding a click event listner to generate button
+const generate = document.getElementById("generateBtn");
+generate.addEventListener("click", () => {
+  const length = document.getElementById("Passwordlength").value;
+  const hasUpper = document.getElementById("uppercase").checked;
+  const hasLower = document.getElementById("lowercase").checked;
+  const hasNumber = document.getElementById("numbers").checked;
+  const hasSymbol = document.getElementById("symbols").checked;
+  const result = document.getElementById("PasswordResult");
+  result.innerText = generatePassword(
+    hasLower,
+    hasUpper,
+    hasNumber,
+    hasSymbol,
+    length
+  );
+  // console.log(hasLower, hasUpper, hasNumber, hasSymbol);
+});
