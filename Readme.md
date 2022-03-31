@@ -1,6 +1,6 @@
 # Frontends Projects - Password Generator 
 
-![Password Generator ](/Design/Desktop.png)
+![Password Generator ](/Design/passwordGenerator.png)
 
 ---
 Project: Password Generator \
