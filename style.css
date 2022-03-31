@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
 
-[data-theme="light"] {
+* {
   --bg-color: #eef0f4;
   --color: #333;
   --togglebg: #333;
@@ -13,7 +13,7 @@
   --filter3: drop-shadow(-2px -2px 3px #ffffff) drop-shadow(2px 2px 3px #c3c5c8);
 }
 
-[data-theme="dark"] {
+/* [data-theme="dark"] {
   --bg-color: #333;
   --color: #ccc;
   --roundcolor: #333;
@@ -25,7 +25,7 @@
     drop-shadow(4px 4px 6px #13111178);
   --filter3: drop-shadow(-2px -2px 3px #16151508)
     drop-shadow(2px 2px 3px #13111178);
-}
+} */
 
 * {
   box-sizing: border-box;
