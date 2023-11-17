@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <!-- Meta tags for character set and viewport settings -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,10 +12,16 @@
 
 <body>
     <div class="container">
+
+        <!-- Heading for the password generator -->
         <h2>Password Generator</h2>
+
+        <!-- Result container for displaying the generated password -->
         <div class="result-container">
             <textarea id="PasswordResult"></textarea>
         </div>
+
+        <!-- Settings section with options for password length and character types -->
         <div class="settings">
             <div class="setting">
                 <label>Password length</label>
@@ -37,6 +44,8 @@
                 <input type="checkbox" id="symbols" checked />
             </div>
         </div>
+
+        <!-- Buttons for generating and copying passwords -->
         <div class="buttons">
             <button class="btn btn-large" id="generateBtn">
                 <i class="fas fa-key"></i> Genrate
@@ -46,7 +55,10 @@
             </button>
         </div>
     </div>
+
+        <!-- Link to the JavaScript file for functionality -->
     <script src="script.js"></script>
+        <!-- External library scripts for FontAwesome and GitHub buttons -->
     <script async defer src="https://buttons.github.io/buttons.js"></script>
     <script src="https://kit.fontawesome.com/dd8c49730d.js" crossorigin="anonymous"></script>
 </body>
