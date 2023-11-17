@@ -5,24 +5,30 @@ Math.floor() function returns the largest integer less than or equal to a given 
 For generating a random uppercase lowercase text random numbers symbols we use Charcode 
 http://stevehardie.com/2009/09/character-code-list-char-code/ */
 
+
+// getRandomLower(): This function returns a random lowercase letter using the Unicode character code.
 function getRandomLower() {
   return String.fromCharCode(Math.floor(Math.random() * 26) + 97);
 }
 
+// getRandomUpper(): This function returns a random uppercase letter using the Unicode character code.
 function getRandomUpper() {
   return String.fromCharCode(Math.floor(Math.random() * 26) + 65);
 }
 
+// getRandomNumber(): This function returns a random number using the Unicode character code.
 function getRandomNumber() {
   return +String.fromCharCode(Math.floor(Math.random() * 10) + 48);
 }
 
+// getRandomSymbol(): This function returns a random symbol from a predefined list of symbols.
 function getRandomSymbol() {
   const symbols = "!@#$%^&*(){}[]=<>/,.";
   return symbols[Math.floor(Math.random() * symbols.length)];
 }
 
 // adding a all functions into a object called randomFunc
+// An object randomFunc is created to store references to the above functions.
 const randomFunc = {
   lower: getRandomLower,
   upper: getRandomUpper,
@@ -49,7 +55,7 @@ generate.addEventListener("click", () => {
   // console.log(hasLower, hasUpper, hasNumber, hasSymbol);
 });
 
-// function for generating random password
+// The generatePassword() function takes the user's selected criteria and generates a random password based on those criteria.
 function generatePassword(lower, upper, number, symbol, length) {
     let generatedPassword = "";
     const typesCount = lower + upper + number + symbol;
