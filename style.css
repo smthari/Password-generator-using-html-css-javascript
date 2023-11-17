@@ -1,5 +1,7 @@
+/* This imports the Muli font from Google Fonts and sets the page styling using CSS variables */
 @import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
 
+/* Set of CSS variables to define colors, shadows, and other properties used throughout the page */
 * {
   --bg-color: #eef0f4;
   --color: #333;
@@ -13,6 +15,7 @@
   --filter3: drop-shadow(-2px -2px 3px #ffffff) drop-shadow(2px 2px 3px #c3c5c8);
 }
 
+/* Global styles */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -110,6 +113,7 @@ textarea {
   margin: 15px 0;
 }
 
+/* Media query for smaller screens */
 @media screen and (max-width: 400px) {
   .result-container {
     font-size: 14px;
